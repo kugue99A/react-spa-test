@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ES2020",
+    "module": "ES2020",
+    "outDir": "dist",
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "lib": ["ES2020", "DOM"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@images/*": ["public/*"],
+      "@pages/*": ["src/pages/*"],
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  },
+  "exclude": ["./node_modules"]
+}
