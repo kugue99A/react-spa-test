@@ -32,6 +32,7 @@ module.exports = {
     ],
   },
   devServer: {
+    // バンドルファイルの出力先
     static: {
       directory: path.join(__dirname, 'dist'),
     },
@@ -39,9 +40,17 @@ module.exports = {
     hot: true,
     open: true,
     port: 3000,
+    // ブラウザリロード，直リンクを許可
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
+    alias: {
+      '~': path.resolve(__dirname, '/src'),
+      '@pages': path.resolve(__dirname, '/src/pages'),
+      '@components': path.resolve(__dirname, '/src/components'),
+      '@assets': path.resolve(__dirname, '/src/assets'),
+    },
   },
   target: 'web',
 };
