@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Header: React.VFC = () => {
   return (
@@ -12,7 +12,7 @@ const Header: React.VFC = () => {
         </div>
       </header>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

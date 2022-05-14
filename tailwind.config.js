@@ -5,7 +5,10 @@ module.exports = {
       width: {
         '1': '1rem',
         '300': '30rem',
-      }
+      },
+      boxShadow: {
+        'xl': '10px 10px 40px #e0e0e0',
+      },
     },
   },
   plugins: [],

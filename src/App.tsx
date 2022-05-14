@@ -1,10 +1,11 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import "./assets/main.css";
-import Home from "@pages/home";
-import Users from "@pages/users";
-import Records from "@pages/records";
-import MainLayout from "@components/MainLayout";
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import './assets/main.css'
+import Home from '@pages/home'
+import Users from '@pages/users'
+import Records from '@pages/records'
+import Courses from '@pages/courses'
+import MainLayout from '@components/MainLayout'
 
 export const App: React.VFC = () => {
   return (
@@ -14,8 +15,9 @@ export const App: React.VFC = () => {
           <Route index element={<Home />} />
           <Route path="users" element={<Users />} />
           <Route path="records" element={<Records />} />
+          <Route path="courses" element={<Courses />} />
         </Routes>
       </MainLayout>
     </>
-  );
-};
+  )
+}

@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
-import MainLayout from "@components/MainLayout";
-import Header from "@components/Header";
-import Menu from "@components/Menu";
+import React, { useEffect, useState } from 'react'
+import SignIn from '@components/SignIn'
 
 const Home: React.VFC = () => {
   return (
     <>
+      <SignIn />
       <div>aaaa</div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

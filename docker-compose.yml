@@ -4,9 +4,10 @@ services:
     build: .
     container_name: 'frontend'
     ports: 
-      - "3000:3000"
+      - '3000:3000'
     volumes:
       - .:/app
+    working_dir: /app
         #command: bash -c "cd app && npm run dev"
     stdin_open: true
     tty: true

@@ -59,7 +59,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline:0;
+  outline: 0;
   font-size: 1.6rem;
   font-weight: inherit;
   color: var(--accent-7);
@@ -75,10 +75,14 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-size: 3.6rem;
+}
+
 p {
   font-size: 1.6rem;
 }
 
 .btn {
-  @apply font-bold py-2 px-4 rounded;
+  @apply rounded py-2 px-4 font-bold;
 }
